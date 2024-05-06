@@ -1,0 +1,392 @@
+@media (min-width: 1381px) and (min-height: 800px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        position: fixed;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 40vh;
+    }
+
+    canvas {
+        width: 85%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .in_goal {
+        height: 10vh;
+        color: #aaa;
+        cursor: not-allowed;
+    }
+
+    #Goal_Course {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 1381px) and (max-height: 799px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        position: fixed;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 40vh;
+    }
+
+    canvas {
+        width: 75%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .in_goal {
+        height: 10vh;
+        color: #aaa;
+        cursor: not-allowed;
+    }
+
+    #Goal_Course {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 1380px) and (min-height: 751px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        position: fixed;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 35vh;
+    }
+
+    canvas {
+        width: 95%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .in_goal {
+        height: 10vh;
+        color: #aaa;
+        cursor: not-allowed;
+    }
+}
+
+@media (max-width: 1380px) and (max-height: 750px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        position: fixed;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 35vh;
+    }
+
+    canvas {
+        width: 80%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .in_goal {
+        height: 10vh;
+        color: #aaa;
+        cursor: not-allowed;
+    }
+}
+
+/* @media (max-width: 899px) {
+  html {
+    font-size: 9px;
+  }
+
+  body {
+    position: fixed;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .shoot_history_tb {
+    overflow: auto;
+    height: 45vh;
+  }
+
+  canvas {
+    height: 50%;
+    aspect-ratio: 2 / 1;
+  }
+
+  #ball_around_goal {
+    height: 20vh;
+  }
+
+  .in_goal {
+    height: 7vh;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+} */
+
+#head_gamename {
+    font-size: 1.2em;
+    margin-top: 0.2%;
+}
+
+#logout_button {
+    margin-left: 1%;
+}
+
+#game_time_set {
+    padding-top: 10px;
+    border: 1px solid #333;
+    background: #f2f2f2;
+}
+
+#timeset_text {
+    font-size: 1.2em;
+    color: #9310b1;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+}
+
+.shoot-judgement:hover {
+    pointer-events: none;
+}
+
+input[name="shoot_result"],
+input[name="shoot_result2"],
+input[name="shooter_position"] {
+    display: none;
+}
+
+input[name="shoot_result"]+label,
+input[name="shoot_result2"]+label,
+input[name="shooter_position"]+label {
+    justify-content: center;
+    align-items: center;
+    background: #0b5ed7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #aaa;
+    transition: all 0.3s;
+    width: auto;
+}
+
+input[class="goal_result"]:checked+label,
+input[name="shooter_position"]:checked+label {
+    background: #36b110;
+    color: #ffffff;
+}
+
+input[class="failure_result"]:checked+label {
+    background: #f80505;
+    color: #ffffff;
+}
+
+input[name="shoot_result"]:disabled+label,
+input[name="shoot_result2"]:disabled+label,
+input[name="shooter_position"]:disabled+label {
+    filter: brightness(0.6);
+    cursor: not-allowed;
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+input[name="7m-throw"] {
+    display: none;
+}
+
+input[name="7m-throw"]+label {
+    border: 1px solid #ccc;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fff;
+    box-shadow: inset 1px 1px 1px #fff;
+}
+
+input[name="7m-throw"]:hover+label {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+input[name="7m-throw"]:checked+label {
+    background: #0b5ed7;
+    color: #ffffff;
+}
+
+table td,
+table th {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.out_of_goal {
+    color: #aaa;
+    width: 1em;
+    line-height: 1.2em;
+    cursor: not-allowed;
+}
+
+#out_top {
+    height: 4vh;
+}
+
+.position-label {
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.migiyose {
+    text-align: right;
+}
+
+.path-team1,
+.path-team2 {
+    font-size: 1.3em;
+}
+
+input[id="shoot_tag"] {
+    border: 1px solid #36b110;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[id="shoot_memo"] {
+    border: 1px solid #36b110;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.shoot_history {
+    margin: 0;
+    border-spacing: 0;
+}
+
+.shoot_history_tb td {
+    white-space: nowrap;
+    border-right: 1px solid rgb(89, 89, 89);
+    border-bottom: 1px solid rgb(89, 89, 89);
+    background: #FFF;
+    padding: 5px;
+}
+
+.shoot_history_tb thead th,
+.shoot_history_tb tbody th {
+    white-space: nowrap;
+    border-right: 1px solid rgb(89, 89, 89);
+    border-bottom: 1px solid rgb(89, 89, 89);
+    background: #f2f2f2;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.shoot_history_tb thead th {
+    border-top: 1px solid rgb(89, 89, 89);
+    border-left: 1px solid rgb(89, 89, 89);
+}
+
+.shoot_history_tb th:first-child {
+    border-left: 1px solid rgb(89, 89, 89);
+}
+
+.shoot_history_tb thead th:first-child {
+    z-index: 1;
+}
+
+.shoot_history_tb tbody tr:hover:not(.selected) td {
+    background: #f99;
+}
+
+.shoot_history_tb tbody tr:hover:not(.selected) th {
+    background: #f99;
+}
+
+#shoot_history .selected th,
+#shoot_history .selected td {
+    background: rgb(139, 234, 132);
+}
+
+#foot_button {
+    margin-top: 1%;
+}
+
+.goal-result-input {
+    padding-top: 10px;
+}
+
+.goal_course {
+    padding-top: 1%;
+}
+
+#cancel {
+    margin-left: 3px;
+}
+
+#seven_button {
+    padding: 10px;
+}
+
+#menu_btn {
+    padding-top: 2.5%;
+}
+
+#input_area {
+    padding-top: 0.5%;
+}
+
+#shooter_position {
+    padding-top: 0.5%;
+}
+
+.button_area {
+    padding-top: 5%;
+}
+
+#timer_area {
+    text-align: center;
+}
+
+#timer {
+    font-size: 10rem;
+    /* フォントサイズを大きく */
+    cursor: pointer;
+}
+
+#timer_area button {
+    margin: 0 1%;
+    /* ボタンの間にスペースを追加 */
+}

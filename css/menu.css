@@ -1,0 +1,229 @@
+body {
+    background-color: RGB(245, 245, 245);
+}
+
+body .container-fluid {
+    padding-top: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navbar-brand {
+    height: 3%;
+    padding: 1%;
+}
+
+.navbar.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#team_table {
+    padding-bottom: 3%;
+}
+
+.team {
+    padding: 0.5%;
+    font-weight: bold;
+    color: rgb(250, 250, 250);
+    background-color: rgb(120, 120, 120);
+}
+
+.all_game {
+    padding: 0.5%;
+    font-weight: bold;
+    color: rgb(250, 250, 250);
+    background-color: rgb(120, 120, 120);
+}
+
+#game_table {
+    background-color: rgb(235, 235, 235);
+}
+
+.table tbody th,
+.table tbody td {
+    padding: 4px;
+}
+
+.table tr {
+    border-bottom: 1px solid rgb(89, 89, 89);
+}
+
+.table thead {
+    font-size: 1.5em;
+}
+
+.table tbody {
+    font-size: 1.2em;
+}
+
+.table tbody .result,
+.table tbody .input {
+    font-size: 0.9em;
+}
+
+.navi {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    font-size: 1.1em;
+}
+
+.logo {
+    display: flex;
+    border: none;
+    margin-right: 1%;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    /* ロゴのサイズを指定 */
+    height: 40px;
+    /* ロゴのサイズを指定 */
+    background-color: white;
+    /* 丸の背景色を白に設定 */
+    border-radius: 50%;
+    /* 丸い形にするためにborder-radiusを50%に設定 */
+    color: black;
+    /* 文字の色を黒に設定 */
+    font-size: 25px;
+    /* 文字のサイズを指定 */
+}
+
+.logo:hover {
+    background-color: #bbb;
+    /* ホバー時の背景色を透明に */
+}
+
+/* ポップアップメニュー全体のスタイル */
+.menu-popup {
+    display: none;
+    /* 初期状態では非表示 */
+    position: fixed;
+    /* 画面の中央に配置 */
+    z-index: 1;
+    /* 他の要素より上に表示 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* 幅を画面全体に */
+    height: 100%;
+    /* 高さを画面全体に */
+    overflow: auto;
+    /* 内容が多い場合はスクロール可能に */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 黒色の半透明 */
+}
+
+/* メニュー内容のスタイル */
+@media (min-width: 990px) {
+    .menu-content {
+        background-color: #fefefe;
+        margin-top: 6%;
+        margin-left: 1.5%;
+        /* 上の余白を 6% に設定 */
+        padding: 20px;
+        border-radius: 10px;
+        /* 角の丸み */
+        border: 1px solid #888;
+        width: 60%;
+        /* 幅 */
+        max-width: 300px;
+        /* 最大幅 */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* 影の追加 */
+        position: relative;
+        /* 閉じるボタンの位置調整のため */
+    }
+}
+
+@media (max-width: 989px) {
+    .menu-content {
+        background-color: #fefefe;
+        margin-top: 10%;
+        margin-left: 1.5%;
+        /* 上の余白を 7% に設定 */
+        padding: 20px;
+        border-radius: 10px;
+        /* 角の丸み */
+        border: 1px solid #888;
+        width: 60%;
+        /* 幅 */
+        max-width: 300px;
+        /* 最大幅 */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* 影の追加 */
+        position: relative;
+        /* 閉じるボタンの位置調整のため */
+    }
+}
+
+/* メニューアイテムのスタイル */
+.menu-content a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333333;
+    /* アイテムの色 */
+    display: block;
+    transition: background-color 0.2s;
+    /* 背景色変化のトランジション */
+}
+
+/* メニューアイテムのホバーエフェクト */
+.menu-content a:hover {
+    background-color: #ddd;
+    /* ホバー時の背景色 */
+}
+
+/* 閉じるボタンのスタイル */
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+    background-color: transparent;
+    /* ホバー時の背景色を透明に */
+}
+
+.user_name {
+    color: gray;
+}
+
+/* .input_game {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    border: 1px solid #aaa;
+}
+
+.input_game:hover {
+    background-color: #555;
+    /* ホバー時の背景色 */
+/*}*/
+
+.nav-link {
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    /* ホバー時の背景色 */
+}
+
+.table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+}

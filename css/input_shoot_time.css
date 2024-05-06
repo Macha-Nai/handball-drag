@@ -1,0 +1,368 @@
+@media (min-width: 1381px) and (min-height: 800px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        width: 100%;
+        position: fixed;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 35vh;
+    }
+
+    #player_area {
+        height: 75vh;
+    }
+}
+
+@media (min-width: 1381px) and (max-height: 799px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        width: 100%;
+        position: fixed;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 30vh;
+    }
+
+    #player_area {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 1380px) and (min-height: 751px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        width: 100%;
+        position: fixed;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 25vh;
+    }
+
+    #player_area {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1380px) and (max-height: 750px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+        position: fixed;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .shoot_history_tb {
+        overflow: auto;
+        height: 25vh;
+    }
+
+    #player_area {
+        height: 70vh;
+    }
+}
+
+#shoot_history_area {
+    padding: 0;
+}
+
+#head_gamename {
+    font-size: 1.1em;
+}
+
+#game_time_set {
+    font-size: 0.9em;
+    padding-top: 10px;
+    border: 1px solid #333;
+    background: #f2f2f2;
+}
+
+#timeset_text {
+    font-size: 1.2em;
+    color: #9310b1;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+}
+
+.shoot-judgement:hover {
+    pointer-events: none;
+}
+
+input[name="shoot_result"],
+input[name="shoot_result2"],
+input[name="shooter_position"] {
+    display: none;
+}
+
+input[name="shoot_result"]+label,
+input[name="shoot_result2"]+label,
+input[name="shooter_position"]+label {
+    justify-content: center;
+    align-items: center;
+    background: #0b5ed7;
+    margin-bottom: 6%;
+    color: #fff;
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 3px #aaa; */
+    transition: all 0.3s;
+    width: auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+input[class="goal_result"]:checked+label,
+input[name="shooter_position"]:checked+label {
+    background: #36b110;
+    color: #ffffff;
+}
+
+input[class="failure_result"]:checked+label {
+    background: #f80505;
+    color: #ffffff;
+}
+
+input[name="shoot_result"]:disabled+label,
+input[name="shoot_result2"]:disabled+label,
+input[name="shooter_position"]:disabled+label {
+    filter: brightness(0.6);
+    cursor: not-allowed;
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+table td,
+table th {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+input[id="shoot_tag"] {
+    border: 1px solid #36b110;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[id="shoot_memo"] {
+    border: 1px solid #36b110;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#shoot_history {
+    width: 100%;
+    table-layout: fixed;
+    /* 列幅を均等にする */
+    margin: 0;
+    border-spacing: 0;
+}
+
+.score {
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
+
+.shoot_history_tb td {
+    white-space: nowrap;
+    border-right: 1px solid rgb(89, 89, 89);
+    border-bottom: 1px solid rgb(89, 89, 89);
+    background: #FFF;
+    padding: 5px;
+}
+
+.shoot_history_tb thead th,
+.shoot_history_tb tbody th {
+    white-space: nowrap;
+    border-right: 1px solid rgb(89, 89, 89);
+    border-bottom: 1px solid rgb(89, 89, 89);
+    background: #f2f2f2;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.shoot_history_tb thead th {
+    border-left: 1px solid rgb(89, 89, 89);
+}
+
+.shoot_history_tb th:first-child {
+    border-left: 1px solid rgb(89, 89, 89);
+}
+
+.shoot_history_tb thead th:first-child {
+    z-index: 1;
+}
+
+.shoot_history_tb tbody tr:hover:not(.selected) td {
+    background: #f99;
+}
+
+.shoot_history_tb tbody tr:hover:not(.selected) th {
+    background: #f99;
+}
+
+#shoot_history .selected th,
+#shoot_history .selected td {
+    background: rgb(139, 234, 132);
+}
+
+#foot_button {
+    margin-top: 1%;
+}
+
+/* #select_team {
+    margin-top: 10px;
+} */
+
+.goal_course {
+    padding-top: 1%;
+}
+
+#cancel {
+    margin-left: 3px;
+}
+
+#seven_button {
+    padding: 10px;
+}
+
+#menu_btn {
+    padding-top: 2.5%;
+}
+
+#input_area {
+    margin-top: 0.5%;
+    padding-top: 0.5%;
+}
+
+#shooter_position {
+    padding-top: 0.5%;
+}
+
+.button_area {
+    padding-top: 5%;
+}
+
+#timer_area {
+    text-align: center;
+}
+
+#timer {
+    font-size: 10rem;
+    /* フォントサイズを大きく */
+    cursor: pointer;
+}
+
+#timer_area button {
+    margin: 0 1%;
+    /* ボタンの間にスペースを追加 */
+}
+
+.row .button-custom {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 5% 6%;
+    /* Fixed width */
+    width: 60%;
+}
+
+.button-custom:hover {
+    background-color: #0056b3;
+    /* Darker Blue */
+}
+
+#time_button {
+    padding-bottom: 1%;
+}
+
+.shoot_history_tb {
+    width: 100%;
+}
+
+#shoot_history th:nth-child(2),
+#shoot_history td:nth-child(2) {
+    width: 18%;
+    /* 得点の列幅を指定 */
+}
+
+#shoot_history th:nth-child(1),
+#shoot_history td:nth-child(1) {
+    width: 38%;
+    /* 時刻とチーム名の列幅を均等に */
+}
+
+#shoot_history th:nth-child(3),
+#shoot_history td:nth-child(3) {
+    width: 44%;
+}
+
+.two_row {
+    padding-top: 2%;
+}
+
+#input_area {
+    border: 2px solid black;
+    /* divの周りに黒い枠線を設定 */
+}
+
+#button_right {
+    padding-top: 5%;
+}
+
+#shoot_memo {
+    margin-bottom: 2%;
+}
+
+#shoot_tag {
+    margin-bottom: 2%;
+}
+
+#video_button {
+    margin-top: 0.7%;
+    margin-bottom: 0.25%;
+}
+
+.shoot_time_text {
+    display: none;
+}
+
+#result {
+    margin: 0% 8%;
+    display: flex;
+    flex-direction: column;
+    /* 横並びにする */
+}
